@@ -5,12 +5,19 @@ The Microbadge is a 6.985mm x 6.985mm badge that uses 1.27mm pin headers to conn
 <img height="250" alt="image" src="https://github.com/user-attachments/assets/91da8ceb-1543-4446-ae7f-8f29410fd13f" /><img height="250" alt="image" src="https://github.com/user-attachments/assets/d81d47c8-f04b-4a6d-89fb-33c86c5688df" /><img height="250" alt="image" src="https://github.com/user-attachments/assets/cea31a96-bbe5-4285-98ac-e42f9cdfd319" />
 
 The Microbadge symbol has the same pin layout as a simplified Minibadge - providing 1x CLK, 1x NC, 2x +3V3, 1x +VBATT, and 3x GND. The NC pin next to CLK can be used for single wire programming in the event you add a small MCU like the ATTiny series.
+
 <img height="250" alt="image" src="https://github.com/user-attachments/assets/d61c73c1-5687-4868-884d-b2a22913a41e" />
 
  # Importing into Kicad
- 1. From the **Project Viewer**, **Symbol Editor** or the **Schematic Editor**, select **Preferences** > **Manage Symbol Libraries...** <img width="289" height="218" alt="image" src="https://github.com/user-attachments/assets/7794d458-4bab-4ac6-8e24-288983d0cf00" />
+ 1. From the **Project Viewer**, **Symbol Editor** or the **Schematic Editor**, select **Preferences** > **Manage Symbol Libraries...** 
+
+<img width="289" height="218" alt="image" src="https://github.com/user-attachments/assets/7794d458-4bab-4ac6-8e24-288983d0cf00" />
+
  2. Under **Global Libraries**, click **Add Existing Library to Table**, Select the `Microbadge.kicad-sym` file. I personally put it in `Documents\KiCad\{version}\symbols` on Windows, there's an equivalent folder on Mac and Linux as well.
- 3. From the **Project Viewer**, **Footprint Editor**, or **PCB Editor**, select **Preferences** > **Manage Footprint Libraries...** <img width="280" height="161" alt="image" src="https://github.com/user-attachments/assets/2f47b1a1-3200-4314-929e-d31f42843eb4" />
+ 3. From the **Project Viewer**, **Footprint Editor**, or **PCB Editor**, select **Preferences** > **Manage Footprint Libraries...** 
+
+<img width="280" height="161" alt="image" src="https://github.com/user-attachments/assets/2f47b1a1-3200-4314-929e-d31f42843eb4" />
+
  4. Under **Global Libraries**, click **Add Existing**, Select the `Microbadge.pretty` folder. I personally put it in `Documents\KiCad\{version}\footprints` on Windows, there's an equivalent folder on Mac and Linux as well.
 
 # Creating a Microbadge carrier board (Minibadge)
