@@ -9,6 +9,7 @@
  * Microbadge with MCU and LEDs
  * 4x WS2812B-1010 RGB LEDs controlled by the NeoPixel library
  * ATTiny 816 MCU (8KB flash) programmable via UPDI through the ArduinoIDE
+ * Diode to prevent reverse-voltage issues
 
 ## Programming:
  * Supply 3v3, GND, and UPDI. UPDI programming port is the normally NC port next to the CLK pin. It has an arrow pointing to the pin on either side of the board.
