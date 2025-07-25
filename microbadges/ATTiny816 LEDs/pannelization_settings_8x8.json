@@ -1,0 +1,29 @@
+{
+    "layout": {
+        "hspace": "2mm",
+        "vspace": "2mm",
+        "rows": "8",
+        "cols": "8"
+    },
+    "tabs": {
+        "type": "fixed",
+        "vwidth": "2mm",
+        "hwidth": "2mm"
+    },
+    "cuts": {
+        "type": "mousebites",
+        "drill": "0.3mm",
+        "spacing": "0.5mm"
+    },
+    "framing": {
+        "type": "frame",
+        "mintotalheight": "70mm",
+        "mintotalwidth": "70mm",
+        "fillet": "1mm"
+    },
+    "tooling": {
+        "type": "4hole",
+        "hoffset": "3mm",
+        "voffset": "3mm"
+    }
+}
