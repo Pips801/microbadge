@@ -2112,7 +2112,7 @@
 		)
 		(uuid "f4b51daa-0009-48dd-972d-c5992dca08ed")
 	)
-	(label "D_+3.3V"
+	(label "D_+VBATT"
 		(at 167.64 49.53 0)
 		(effects
 			(font
