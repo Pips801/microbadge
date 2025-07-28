@@ -1814,8 +1814,8 @@
 	)
 	(text_box "ATTiny 816"
 		(exclude_from_sim no)
-		(at 143.51 33.02 0)
-		(size 57.15 67.31)
+		(at 143.51 30.48 0)
+		(size 57.15 69.85)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1857,12 +1857,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "496bc045-108c-4834-9cb4-bc04dc02238e")
-	)
-	(junction
-		(at 167.64 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9123c766-4cc3-4fde-856e-867165c3bbdd")
 	)
 	(no_connect
 		(at 182.88 64.77)
@@ -2163,6 +2157,28 @@
 		(uuid "81639fd8-4176-4df8-b4d6-924979fea533")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 129.54 106.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+VBATT"
+		(shape input)
+		(at 167.64 41.91 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "84466cd9-faa7-4df1-8264-2fff6e02a9ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 31.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,72 +2563,6 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 167.64 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09003f59-239f-42a4-9af5-c3cda77d8173")
-		(property "Reference" "#PWR01"
-			(at 167.64 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 167.64 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 167.64 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4b3c34f9-fdf7-4584-9d1d-ca1844ab662e")
-		)
-		(instances
-			(project "Microbadge"
-				(path "/5dd520c4-9ed5-468f-b7d2-9e80276de018"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
 		(at 124.46 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2732,7 +2682,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0c84d207-760c-4217-98fa-dc301e5e05f4")
+			(uuid "0c84d207-760c-4217-98fa-dc301e5e05f5")
 		)
 		(instances
 			(project ""
@@ -2798,7 +2748,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e68f867d-3df6-46bb-b62c-5f451efe390d")
+			(uuid "e68f867d-3df6-46bb-b62c-5f451efe390e")
 		)
 		(instances
 			(project ""
@@ -2995,10 +2945,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5056e69f-e05b-4825-be2d-4d18fb1e0658")
+			(uuid "5056e69f-e05b-4825-be2d-4d18fb1e0659")
 		)
 		(pin "1"
-			(uuid "45e5927b-e7d2-4007-9313-fbe92ce59148")
+			(uuid "45e5927b-e7d2-4007-9313-fbe92ce59149")
 		)
 		(instances
 			(project ""
@@ -3518,10 +3468,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5056e69f-e05b-4825-be2d-4d18fb1e0658")
+			(uuid "5056e69f-e05b-4825-be2d-4d18fb1e065a")
 		)
 		(pin "1"
-			(uuid "45e5927b-e7d2-4007-9313-fbe92ce59148")
+			(uuid "45e5927b-e7d2-4007-9313-fbe92ce5914a")
 		)
 		(instances
 			(project ""
@@ -3788,7 +3738,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0c84d207-760c-4217-98fa-dc301e5e05f4")
+			(uuid "0c84d207-760c-4217-98fa-dc301e5e05f6")
 		)
 		(instances
 			(project ""
@@ -4583,10 +4533,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "5056e69f-e05b-4825-be2d-4d18fb1e0658")
+			(uuid "5056e69f-e05b-4825-be2d-4d18fb1e065b")
 		)
 		(pin "1"
-			(uuid "45e5927b-e7d2-4007-9313-fbe92ce59148")
+			(uuid "45e5927b-e7d2-4007-9313-fbe92ce5914b")
 		)
 		(instances
 			(project ""
