@@ -12,4 +12,4 @@
  * Diode to prevent reverse-voltage issues
 
 ## Programming:
- * Supply 3v3, GND, and UPDI. UPDI programming port is the normally NC port next to the CLK pin. It has an arrow pointing to the pin on either side of the board.
+ * Supply 5v, GND, and UPDI. UPDI programming port is the normally NC port next to the CLK pin. It has an arrow pointing to the pin on either side of the board.
