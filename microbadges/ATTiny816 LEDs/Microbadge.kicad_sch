@@ -1167,12 +1167,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Pips Lib:Microbadge"
+		(symbol "Microbadge V2:Microbadge_V2_simple"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "MCB1"
-				(at -12.7 0 90)
+				(at -13.97 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1180,7 +1180,7 @@
 				)
 			)
 			(property "Value" "Socket"
-				(at -10.16 0 90)
+				(at -11.43 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1205,7 +1205,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "SAINTCON Microbadge V2"
+				(at 0 -1.778 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "SAINTCON"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1214,7 +1223,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Microbadge_0_1"
+			(symbol "Microbadge_V2_simple_0_1"
 				(rectangle
 					(start -8.89 8.89)
 					(end 8.89 -8.89)
@@ -1227,9 +1236,9 @@
 					)
 				)
 			)
-			(symbol "Microbadge_1_1"
-				(pin output line
-					(at -7.62 11.43 270)
+			(symbol "Microbadge_V2_simple_1_1"
+				(pin power_in line
+					(at -6.35 11.43 270)
 					(length 2.54)
 					(name "+VBATT"
 						(effects
@@ -1247,7 +1256,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -7.62 -11.43 90)
+					(at -6.35 -11.43 90)
 					(length 2.54)
 					(name "CLK"
 						(effects
@@ -1256,7 +1265,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1264,8 +1273,8 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 11.43 270)
+				(pin power_out line
+					(at -3.81 11.43 270)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1283,9 +1292,63 @@
 					)
 				)
 				(pin bidirectional line
-					(at -5.08 -11.43 90)
+					(at -3.81 -11.43 90)
 					(length 2.54)
-					(name "PROG"
+					(name "UPDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 3.81 11.43 270)
+					(length 2.54)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 3.81 -11.43 90)
+					(length 2.54)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 6.35 11.43 270)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1300,44 +1363,8 @@
 						)
 					)
 				)
-				(pin output line
-					(at 5.08 11.43 270)
-					(length 2.54)
-					(name "+3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 5.08 -11.43 90)
-					(length 2.54)
-					(name "+3V3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 11.43 270)
+				(pin power_out line
+					(at 6.35 -11.43 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1346,25 +1373,7 @@
 							)
 						)
 					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -11.43 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
+					(number "12"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2124,7 +2133,7 @@
 	)
 	(global_label "CLK"
 		(shape bidirectional)
-		(at 101.6 76.2 180)
+		(at 101.6 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2134,7 +2143,7 @@
 		)
 		(uuid "1ac76775-5448-47d2-b507-440b4c8d2805")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.9354 76.2 0)
+			(at 93.9354 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2212,7 +2221,7 @@
 	)
 	(global_label "+VBATT"
 		(shape input)
-		(at 124.46 76.2 0)
+		(at 124.46 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2222,7 +2231,7 @@
 		)
 		(uuid "8cccbfee-83e9-4fbe-a8f9-d28fb642be3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.4 76.2 0)
+			(at 134.4 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2234,7 +2243,7 @@
 	)
 	(global_label "UPDI_PROG"
 		(shape bidirectional)
-		(at 101.6 78.74 180)
+		(at 101.6 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2244,7 +2253,7 @@
 		)
 		(uuid "b8f6f543-0568-4d66-ad35-6b217252b5c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.9201 78.74 0)
+			(at 86.9201 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2366,7 +2375,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 78.74 0)
+		(at 124.46 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2374,7 +2383,7 @@
 		(dnp no)
 		(uuid "0329276d-1fd6-4798-ae59-1c9995fa055a")
 		(property "Reference" "#PWR07"
-			(at 124.46 85.09 0)
+			(at 124.46 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2383,7 +2392,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 82.296 0)
+			(at 127.762 81.788 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +2400,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 78.74 0)
+			(at 124.46 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,7 +2409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 78.74 0)
+			(at 124.46 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2409,7 +2418,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 78.74 0)
+			(at 124.46 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2431,16 +2440,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 101.6 91.44 0)
+		(at 101.6 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "073301d2-ea92-4b28-ba1f-e43327314fa7")
 		(property "Reference" "#PWR013"
-			(at 101.6 97.79 0)
+			(at 101.6 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2449,7 +2457,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.6 96.52 0)
+			(at 101.6 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2457,7 +2465,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 91.44 0)
+			(at 101.6 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +2474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 91.44 0)
+			(at 101.6 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2475,7 +2483,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 91.44 0)
+			(at 101.6 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2563,16 +2571,15 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 124.46 88.9 0)
+		(at 124.46 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0d83fd04-acf3-4bd6-b255-61d6e2f4939f")
 		(property "Reference" "#PWR04"
-			(at 124.46 92.71 0)
+			(at 124.46 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2581,7 +2588,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 124.46 83.82 0)
+			(at 128.016 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2589,7 +2596,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 88.9 0)
+			(at 124.46 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2598,7 +2605,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 88.9 0)
+			(at 124.46 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2607,7 +2614,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 124.46 88.9 0)
+			(at 124.46 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2695,16 +2702,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 124.46 91.44 0)
+		(at 124.46 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "17951ded-6493-4a27-895c-5f0ba6379171")
 		(property "Reference" "#PWR015"
-			(at 124.46 97.79 0)
+			(at 124.46 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2713,7 +2719,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.46 96.52 0)
+			(at 124.46 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2721,7 +2727,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 91.44 0)
+			(at 124.46 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2730,7 +2736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 91.44 0)
+			(at 124.46 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2739,7 +2745,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 91.44 0)
+			(at 124.46 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3330,17 +3336,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Pips Lib:Microbadge")
+		(lib_id "Microbadge V2:Microbadge_V2_simple")
 		(at 113.03 83.82 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48448f76-3c35-4153-b75c-142d54ebf38a")
 		(property "Reference" "MCB1"
-			(at 113.03 71.12 90)
+			(at 113.03 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3348,14 +3354,14 @@
 			)
 		)
 		(property "Value" "Socket"
-			(at 113.03 73.66 90)
+			(at 113.03 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Microbadge:Microbadge_round"
+		(property "Footprint" "Microbadge V2:Microbadge_V2_simple_round"
 			(at 113.03 83.82 0)
 			(effects
 				(font
@@ -3373,11 +3379,11 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 113.03 83.82 0)
+		(property "Description" "SAINTCON Microbadge V2"
+			(at 111.252 83.82 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
 				(hide yes)
 			)
@@ -3397,10 +3403,10 @@
 		(pin "6"
 			(uuid "c5d9bcff-49af-479e-91dc-d83b2c7b3a1f")
 		)
-		(pin "4"
+		(pin "12"
 			(uuid "3ca9d53f-94ba-4a29-992f-30206f898270")
 		)
-		(pin "3"
+		(pin "11"
 			(uuid "bb5b488a-1b5c-410d-a43d-deed841f2509")
 		)
 		(pin "2"
@@ -4350,16 +4356,15 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 101.6 88.9 0)
+		(at 101.6 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b5a1d299-c78f-4d03-961d-5d6327f9ae45")
 		(property "Reference" "#PWR06"
-			(at 101.6 92.71 0)
+			(at 101.6 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4368,7 +4373,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 101.6 83.82 0)
+			(at 97.79 86.868 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4376,7 +4381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 88.9 0)
+			(at 101.6 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,7 +4390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 88.9 0)
+			(at 101.6 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4394,7 +4399,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 101.6 88.9 0)
+			(at 101.6 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
