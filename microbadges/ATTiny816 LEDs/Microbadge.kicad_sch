@@ -1716,26 +1716,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 41.91) (xy 180.34 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10b63271-a977-4d2b-a41e-b1e7c15225be")
-	)
-	(wire
-		(pts
-			(xy 167.64 41.91) (xy 180.34 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ba8892b-a8e7-4818-ac93-dc7f329ae29a")
-	)
-	(wire
-		(pts
 			(xy 123.19 128.27) (xy 123.19 135.89)
 		)
 		(stroke
@@ -1743,6 +1723,16 @@
 			(type default)
 		)
 		(uuid "293f33ce-4833-4b78-8693-d509bb095c9b")
+	)
+	(wire
+		(pts
+			(xy 185.42 44.45) (xy 185.42 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e586688-f06b-40d4-8094-1c1ebd82e006")
 	)
 	(wire
 		(pts
@@ -1826,6 +1816,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 41.91) (xy 167.64 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce06f652-7494-44f8-852f-00aba5220dac")
+	)
+	(wire
+		(pts
 			(xy 148.59 46.99) (xy 149.86 46.99)
 		)
 		(stroke
@@ -1846,7 +1846,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 46.99) (xy 185.42 54.61)
+			(xy 185.42 49.53) (xy 185.42 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3966,7 +3966,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 182.88 46.99 90)
+		(at 185.42 46.99 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3975,23 +3975,25 @@
 		(fields_autoplaced yes)
 		(uuid "e3fccd76-dbe0-48cd-8d1f-fb5c5c15cc8e")
 		(property "Reference" "R1"
-			(at 182.88 41.91 90)
+			(at 187.96 45.7199 0)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "10k"
-			(at 182.88 44.45 90)
+			(at 187.96 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 182.88 46.99 0)
+			(at 185.42 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4000,7 +4002,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 182.88 46.99 0)
+			(at 185.42 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4009,7 +4011,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 182.88 46.99 0)
+			(at 185.42 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
