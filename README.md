@@ -1,4 +1,6 @@
 # Microbadge
+
+# Version 2! Do not use V1 anymore!
 Do you find Minibadges too big? Do you want to go even smaller? Try out the Microbadge! A minibadge can hold 4 of them!
 
 The Microbadge is a 6mm x 6mm badge that uses 1.00mm pin headers to connect to a carrier board.
