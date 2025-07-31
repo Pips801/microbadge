@@ -1,13 +1,17 @@
 # Microbadge
-Do you find Minibadges too big? Do you want to go even smaller? Try out the Microbadge! A minibadge can hold 4 of them!
+Do you find Minibadges too big? Do you want to go even smaller? Try out the Microbadge! A minibadge can hold 6 of them!
 
 The Microbadge is a 6mm x 6mm badge that uses 1.00mm pin headers to connect to a carrier board.
+# Version 2! Do not use V1 anymore!
+The Microbadge has been updated to V2 to support I2C, 1.00mm pins, and an additional 2x PROG pins for programming.  The microbadge has shrunk from 6.9mm to 6mm, and is small enough that you can fit 6 on a minibadge.
 
+<img  height="400" alt="image" src="https://github.com/user-attachments/assets/2017b302-8d0c-4197-817d-e0df04d9d387" />
+
+
+# Pictures
 <img height="250" alt="Full Microbadge" src="https://github.com/user-attachments/assets/9416e99f-954c-4d11-9a21-1a8b5485afc8" /><img height="250" alt="Simple Microbadge" src="https://github.com/user-attachments/assets/481b4655-0e68-435f-9187-42f538a56e53" />
 
 <img height="250" alt="Full Microbadge" src="https://github.com/user-attachments/assets/163dc83a-3495-4eae-8463-c900dab8fda4" /><img height="250" alt="Simple Microbadge" src="https://github.com/user-attachments/assets/8f2cdaf6-47dd-44bb-9ad6-3d44205e12f0" />
-
-
 
 There are two Microbadge types - Simple and Full. Simple exposes +VBATT, CLK, 3x GND, and 2x +3v. The Full Microbadge adds two programming pins, and I2C SDA and SCL.
 
