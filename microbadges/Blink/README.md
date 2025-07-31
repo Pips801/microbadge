@@ -1,7 +1,8 @@
 # BLINK Microbadge
 ## Pictures
-<img height="250" alt="image" src="https://github.com/user-attachments/assets/7fd1aabd-6f37-4a88-b32a-6885f8854bd0" />
-<img height="250" alt="image" src="https://github.com/user-attachments/assets/49b14ac2-3ff9-45b2-b12f-633e0e90db63" />
+<img height="250" alt="image" src="https://github.com/user-attachments/assets/12d59e7b-46af-47ff-8819-97baa679d651" />
+<img height="250" alt="image" src="https://github.com/user-attachments/assets/a553842b-d65e-4df2-b586-5397a5e3b5c9" />
+
 
 
 ## Description
