@@ -1043,7 +1043,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Microbadge V2:Microbadge_V2_simple"
+		(symbol "Microbadge V2:Microbadge_V2_full"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1063,7 +1063,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Microbadge:Microbadge_round"
+			(property "Footprint" "Microbadge V2:Microbadge_V2_full_round"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1099,7 +1099,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Microbadge_V2_simple_0_1"
+			(symbol "Microbadge_V2_full_0_1"
 				(rectangle
 					(start -8.89 8.89)
 					(end 8.89 -8.89)
@@ -1112,7 +1112,7 @@
 					)
 				)
 			)
-			(symbol "Microbadge_V2_simple_1_1"
+			(symbol "Microbadge_V2_full_1_1"
 				(pin power_in line
 					(at -6.35 11.43 270)
 					(length 2.54)
@@ -1178,6 +1178,78 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 11.43 270)
+					(length 2.54)
+					(name "PROG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 -11.43 90)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 1.27 11.43 270)
+					(length 2.54)
+					(name "PROG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 1.27 -11.43 90)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1627,12 +1699,16 @@
 		(uuid "10f81428-8111-41df-9fba-6c5b9b034c1f")
 	)
 	(no_connect
-		(at 124.46 87.63)
-		(uuid "4aaebc00-994a-4a62-a5d5-bf632830b5a9")
+		(at 124.46 82.55)
+		(uuid "130633e7-c572-4bd8-893e-7c4f7ac6b495")
 	)
 	(no_connect
-		(at 152.4 80.01)
-		(uuid "5425e843-34a0-46b9-af05-122e22f2c8c8")
+		(at 124.46 85.09)
+		(uuid "1b586695-2ffd-4a64-96fe-870291b4903b")
+	)
+	(no_connect
+		(at 124.46 87.63)
+		(uuid "4aaebc00-994a-4a62-a5d5-bf632830b5a9")
 	)
 	(no_connect
 		(at 182.88 69.85)
@@ -1681,10 +1757,6 @@
 	(no_connect
 		(at 195.58 128.27)
 		(uuid "dcd2aec5-b604-4027-8c65-5ee62d210f07")
-	)
-	(no_connect
-		(at 152.4 77.47)
-		(uuid "e8952ae7-e331-4830-bf29-13e10ced6d2b")
 	)
 	(no_connect
 		(at 182.88 57.15)
@@ -1896,6 +1968,28 @@
 			)
 		)
 	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 152.4 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "76d4d17b-d504-4a72-9785-0b978d6dc2cf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.7354 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "+VBATT"
 		(shape input)
 		(at 129.54 116.84 90)
@@ -1984,6 +2078,28 @@
 			)
 		)
 	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 101.6 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "acbf46c3-2483-4a28-a39f-77f3dc245a67")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.9354 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "UPDI_PROG"
 		(shape bidirectional)
 		(at 101.6 80.01 180)
@@ -2050,6 +2166,28 @@
 			)
 		)
 	)
+	(global_label "SCL"
+		(shape bidirectional)
+		(at 152.4 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d6b7e0ff-a5ad-4d99-81c2-5e93721b16c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.7959 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "+VBATT"
 		(shape input)
 		(at 181.61 116.84 90)
@@ -2068,6 +2206,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape bidirectional)
+		(at 101.6 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "db0be9d6-49ff-49cd-84c7-3442c7c80d11")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.9959 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2984,11 +3144,11 @@
 		)
 	)
 	(symbol
-		(lib_id "Microbadge V2:Microbadge_V2_simple")
+		(lib_id "Microbadge V2:Microbadge_V2_full")
 		(at 113.03 83.82 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -3009,7 +3169,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Microbadge V2:Microbadge_V2_simple_round"
+		(property "Footprint" "Microbadge V2:Microbadge_V2_full_round"
 			(at 113.03 83.82 0)
 			(effects
 				(font
@@ -3059,6 +3219,18 @@
 		)
 		(pin "2"
 			(uuid "9260f86c-3578-43a2-945b-ed9206a791a7")
+		)
+		(pin "10"
+			(uuid "6b676318-75c1-42ae-8d11-e82abb1cc185")
+		)
+		(pin "9"
+			(uuid "0be45ee5-9826-42fb-9b58-91340e976798")
+		)
+		(pin "3"
+			(uuid "4812a617-b4d3-4ba9-9c52-55b0437485e5")
+		)
+		(pin "4"
+			(uuid "bdb5621d-e431-4e0e-afff-b80dcb1e5a3e")
 		)
 		(instances
 			(project ""
